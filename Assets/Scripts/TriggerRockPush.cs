@@ -21,7 +21,7 @@ public class TriggerRockPush : MonoBehaviour
             pass = true;
             for (int i = 0; i < 5; i++)
             {
-                if (currentCombo[currentCombo.Count-i-1] != combo[i])
+                if (currentCombo[currentCombo.Count-5+i] != combo[i])
                 {
                    pass = false;
                     Debug.Log(currentCombo[currentCombo.Count-i-1]);
