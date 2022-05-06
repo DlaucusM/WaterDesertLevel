@@ -6,6 +6,7 @@ public class TriggerArch : MonoBehaviour
 {
     public GameObject objectToMove;
     public GameObject particalEffect;
+    public GameObject particalEffect2;
 
 
     private void OnTriggerEnter(Collider other)
@@ -14,6 +15,7 @@ public class TriggerArch : MonoBehaviour
         {
             objectToMove.GetComponent<Animator>().SetTrigger("TriggerArch");
             particalEffect.SetActive(true);
+            particalEffect2.SetActive(true);
         }
     }
 }
