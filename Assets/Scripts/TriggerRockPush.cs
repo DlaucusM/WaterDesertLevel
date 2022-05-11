@@ -7,6 +7,9 @@ public class TriggerRockPush : MonoBehaviour
     public GameObject objectToMove;
     public GameObject particalEffect;
     public GameObject particalEffect2;
+    public GameObject particalEffect3;
+    public GameObject particalEffect4;
+    public GameObject particalEffect5;
     private List<int> combo = new List<int> { 5, 3, 2, 4, 1 };
     private List<int> currentCombo = new List<int> {};
     private bool pass;
@@ -39,6 +42,9 @@ public class TriggerRockPush : MonoBehaviour
                 objectToMove.GetComponent<Animator>().SetTrigger("RockPush");
                 particalEffect.SetActive(true);
                 particalEffect2.SetActive(true);
+                particalEffect3.SetActive(true);
+                particalEffect4.SetActive(true);
+                particalEffect5.SetActive(true);
             }
         }
     }
